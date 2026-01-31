@@ -1,6 +1,6 @@
-// src/middleware/errorHandler.ts
+// src/middlewares/errorhandler.middleware.ts
 import { NextFunction, Request, Response } from "express";
-import { handleAllErrors } from "../utils/errorHandler";
+import { handleAllErrors } from "../utils/response.utils";
 
 const errorHandling = (
   err: unknown,

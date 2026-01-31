@@ -1,7 +1,7 @@
-// src/utils/errorHandler.ts
+// src/utils/response.utils.ts
 import { Prisma } from "@/lib/prisma"
 import { Response } from "express";
-import { AppError } from "./customError";
+import { AppError } from "./error.utils";
 
 export const sendErrorResponse = (
   res: Response,

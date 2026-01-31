@@ -2,9 +2,8 @@ import cors from "cors";
 import express, { Application } from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
-import errorHandling from "@/middleware/errorHandler";
-import { notFoundHandler } from "../general/notFoundHandler";
-
+import errorHandling from "@/middlewares/errorhandler.middleware";
+import { notFoundHandler } from "@/utils/notfound.utils";
 
 
 
@@ -24,10 +23,9 @@ export const createApp = (): Application => {
   app.use(cors());
 
 
-   //Routes
-   app.use('/api/auth', authRoutes);
+  //Routes
+  // app.use('/api/auth', authRoutes);
    
-
 
 
 
